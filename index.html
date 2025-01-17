@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Achievements</title>
+    <style>
+        p {
+            margin: 0;
+        }
+        body {
+            font-family: "MS PGothic", sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            margin: 40px;
+        }
+        .achievements-container {
+            border: 1.5px solid #2A323C;  /* Outline the entire list of achievements */
+            margin: 0 auto;
+            width: fit-content;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 1000px;
+        }
+        .achievement {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-template-rows: auto;
+            gap: 15px;
+            align-items: center;
+            background: #1D232A;
+            padding: 12px;
+        }
+        .achievement2 {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-template-rows: auto;
+            gap: 15px;
+            align-items: center;
+            background: #191E24;
+            padding: 10px;
+        }
+        .achievement img, .achievement2 img {
+            border-radius: 5px;
+        }
+        .achievement-text {
+            grid-template-rows: auto auto;
+        }
+        .achievement-title {
+            font-size: 0.97em;
+            font-weight: bold;
+            margin: 0 0 5px;
+        }
+        .achievement-description {
+            font-size: 0.8em;
+            color: #858585;
+        }
+        .achievement-description img {
+            margin-bottom: -6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="achievements-container">
+        <div class="achievement">
+            <img src="yep.png" alt="Game Image">
+            <div class="achievement-text">
+                <p class="achievement-title">Rabi-Ribi</p>
+                <p class="achievement-description"><b>150/150</b> Points <img src="button.png" alt="Button"></p>
+            </div>
+        </div>
+        <div class="achievement2">
+            <img src="yep3.png" alt="Game Image">
+            <div class="achievement-text">
+                <p class="achievement-title">Touhou Kouryudou ~ Unconnected Marketeers.</p>
+                <p class="achievement-description"><b>25/65</b> Points <img src="button2.png" alt="Button"></p>
+            </div>
+        </div>
+        <div class="achievement">
+            <img src="yep2.png" alt="Game Image">
+            <div class="achievement-text">
+                <p class="achievement-title">Miss Kobayashi's Dragon Maid Burst Forth!! Choro-gon☆Breath DIRECTOR'S CUT</p>
+                <p class="achievement-description"><b>10/10</b> Points <img src="button1.png" alt="Button"></p>
+            </div>
+        </div>
+        <div class="achievement2">
+            <img src="yep4.png" alt="Game Image">
+            <div class="achievement-text">
+                <p class="achievement-title">Crucible</p>
+                <p class="achievement-description"><b>5/5</b> Points <img src="button1.png" alt="Button"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
