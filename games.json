@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Rabi-Ribi",
+        "image": "yep.png",
+        "points": "150/150",
+        "description": "Totally interesting text that you would definitely want to read",
+        "buttonImage": "button.png"
+    },
+    {
+        "title": "Touhou Kouryudou ~ Unconnected Marketeers.",
+        "image": "yep3.png",
+        "points": "25/65",
+        "description": "Totally interesting text that you would definitely want to read",
+        "buttonImage": "button2.png"
+    },
+    {
+        "title": "Miss Kobayashi's Dragon Maid Burst Forth!! Choro-gon☆Breath DIRECTOR'S CUT",
+        "image": "yep2.png",
+        "points": "10/10",
+        "description": "Totally interesting text that you would definitely want to read",
+        "buttonImage": "button1.png"
+    },
+    {
+        "title": "Crucible",
+        "image": "yep4.png",
+        "points": "5/5",
+        "description": "Totally interesting text that you would definitely want to read",
+        "buttonImage": "button1.png"
+    }
+]
