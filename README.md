@@ -1,1 +1,1 @@
-A Database, wiki, and guide for Aura Kingdom.
+A database, wiki, and guide for Aura Kingdom.
