@@ -19,12 +19,6 @@
 body {
     background-color: #000000;
     color: var(--text);
-    font-family: Arial, sans-serif;
-    font-size: .8rem;
-    line-height: 1.15rem;
-    height: 100vh;
-    width: 100vw;
-    padding: 100px;
     display: grid;
     gap: 1rem;
     grid-template-columns: 8rem auto auto;
@@ -64,8 +58,6 @@ article {
     overflow: hidden;
 }
 
-.box-title div,
-.box-updates div,
 ul {
     padding: 0 .6rem;
 }
