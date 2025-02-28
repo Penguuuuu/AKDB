@@ -23,17 +23,18 @@ body {
     font-size: .8rem;
     line-height: 1.15rem;
     height: 100vh;
+    width: 100vw;
     padding: 100px;
     display: grid;
     gap: 1rem;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 8rem auto auto;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
-        "box-nav box-title"
-        "box-nav box-updates";
+        "box-nav box-title box-title"
+        "box-nav box-page-updates box-site-updates";
 }
 
-h1, h2{
+h1, h2 {
     padding: var(--padding-heading);
 }
 h1 {
@@ -60,23 +61,19 @@ article {
     background-color: var(--color-backgound);
     align-self: start; /* height of the content */
     padding-bottom: .3rem;
+    overflow: hidden;
 }
 
 .box-title div,
 .box-updates div,
 ul {
-    padding: 0 .6rem 0 .6rem;
+    padding: 0 .6rem;
 }
 
-/* TITLE ------------ */
-.box-title { 
-    grid-area: box-title;
-}
-
-.box-title div p{
-    width: 50%;
-    margin: auto;
-    text-align: center;
+li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* NAV -------------- */
@@ -90,14 +87,30 @@ nav {
 }
 
 fieldset {
-    padding: 0 .3rem 0 .3rem;
+    padding: 0 .3rem;
     margin-top: var(--spacing-nav);
     border: solid 1px var(--color-primary);
     color: var(--text-secondary);
-    width: 8rem;
 }
 
-/* UPDATES ---------- */
-.box-updates { 
-    grid-area: box-updates;
+/* TITLE ------------ */
+.box-title { 
+    grid-area: box-title;
+    width: 100%;
+}
+
+.box-title div p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+/* PAGE UPDATES ----- */
+.box-page-updates { 
+    grid-area: box-page-updates;
+}
+
+/* SITE UPDATES ----- */
+.box-site-updates { 
+    grid-area: box-site-updates;
 }
