@@ -1,57 +1,21 @@
 /* GENERAL ----------------------------------------------------------------------------------------------------------------------- */
-:root {
-    --padding-heading: .2rem;
-    --padding-heading-h3: .1rem .2rem .1rem .2rem;
-    --text: #dddddd;
-    --text-secondary: #808080;
-    --color-primary: #225588;
-    --color-backgound: #071c30bc;
-    --spacing-nav: .3rem;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-}
 
 body {
-    background-color: #000000;
-    color: var(--text);
     display: grid;
     gap: 1rem;
     grid-template-columns: 8rem auto auto;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
-        "box-nav box-title box-title"
+        "box-nav box-description box-description"
         "box-nav box-page-updates box-site-updates";
 }
 
-/* NAV -------------- */
-.box-nav { 
-    grid-area: box-nav;
-}
-
-nav {
-    padding: var(--spacing-nav);
-    padding-bottom: 0;
-}
-
-fieldset {
-    padding: 0 .3rem;
-    margin-top: var(--spacing-nav);
-    border: solid 1px var(--color-primary);
-    color: var(--text-secondary);
-}
-
 /* TITLE ------------ */
-.box-title { 
-    grid-area: box-title;
-    width: 100%;
+.box-description { 
+    grid-area: box-description;
 }
 
-.box-title div p {
+.box-description div p {
     width: 50%;
     margin: auto;
     text-align: center;

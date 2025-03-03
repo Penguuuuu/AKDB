@@ -1,0 +1,51 @@
+/* GENERAL ----------------------------------------------------------------------------------------------------------------------- */
+
+body {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 8rem auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "box-nav box-description"
+        "box-nav box-log";
+}
+
+.break {
+    border-bottom: solid 1px var(--color-primary);
+}
+
+/* TITLE ------------ */
+.box-description { 
+    grid-area: box-description;
+}
+
+.box-description div p {
+    margin-left: 1.5rem;
+}
+
+/* LOG -------------- */
+.box-log { 
+    grid-area: box-log;
+}
+
+ul {
+    padding: 0 !important; 
+}
+
+.article-ul {
+    padding: 0 !important; 
+    background-color: transparent !important;
+}
+
+li {
+    padding: .15rem 1.5rem .15rem 1.5rem;
+}
+
+
+li:nth-child(odd) {
+    background-color: var(--color-backgound);
+}
+
+li:nth-child(even) {
+    background-color: #051524bc;
+}

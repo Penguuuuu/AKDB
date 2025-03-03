@@ -1,10 +1,31 @@
+:root {
+    --padding-heading: .2rem;
+    --padding-heading-h3: .1rem .2rem;
+    --spacing-nav: .3rem;
+    --text: #dddddd;
+    --text-secondary: #808080;
+    --text-underline: #afafaf;
+    --color-primary: #225588;
+    --color-backgound: #071c30bc;
+    --color-backgound-main: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
 body {
+    background: var(--color-backgound-main) url(images/ayako.png) no-repeat;
+    color: var(--text);
     font-family: Arial, sans-serif;
     font-size: .8rem;
     line-height: 1.15rem;
     height: 100vh;
     width: 100vw;
-    padding: 100px;
+    padding: 135px 100px 135px 100px;
 }
 
 h1, h2 {
@@ -28,6 +49,23 @@ h3 {
     font-size: .9rem;
 }
 
+.link-right {
+    float: right;
+}
+
+.link,
+.link-right {
+    font-weight: normal;
+    font-size: .8rem;
+    color: #77bbdd;
+    text-decoration: none;
+}
+
+.link:hover,
+.link-right:hover {
+    border-bottom: dotted 1px var(--text-underline);
+}
+
 /* CONTAINER --------------------------------------------------------------------------------------------------------------------- */
 article {
     border: solid 1px var(--color-primary);
@@ -45,4 +83,30 @@ li {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* NAV -------------- */
+.box-nav { 
+    grid-area: box-nav;
+}
+
+nav {
+    padding: var(--spacing-nav);
+    padding-bottom: 0;
+}
+
+fieldset {
+    padding: 0 .3rem;
+    margin-top: var(--spacing-nav);
+    border: solid 1px var(--color-primary);
+    color: var(--text-secondary);
+}
+
+.link-nav {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.link-nav:hover {
+    border-bottom: dotted 1px var(--text-underline);
 }
